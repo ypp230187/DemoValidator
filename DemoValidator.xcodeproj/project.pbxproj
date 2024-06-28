@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F60174D07FE34382BFDBCBEF /* Pods_DemoValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453C54B23E8AFF49BF97845E /* Pods_DemoValidator.framework */; };
 		F8ADF4C22C2F18390097D0F4 /* DemoValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = F8ADF4C12C2F18390097D0F4 /* DemoValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8ADF4C92C2F18450097D0F4 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADF4C82C2F18450097D0F4 /* Validator.swift */; };
 		F8ADF4F92C2F1D510097D0F4 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADF4F82C2F1D510097D0F4 /* HelloWorld.swift */; };
@@ -16,6 +15,8 @@
 		F8ADF5052C2F474F0097D0F4 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ADF5002C2F468B0097D0F4 /* Flutter.xcframework */; };
 		F8ADF5062C2F474F0097D0F4 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8ADF5002C2F468B0097D0F4 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8ADF5082C2F479E0097D0F4 /* FlutterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADF5072C2F479E0097D0F4 /* FlutterManager.swift */; };
+		F8ADF5432C2F532C0097D0F4 /* Pods_DemoValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453C54B23E8AFF49BF97845E /* Pods_DemoValidator.framework */; };
+		F8ADF5442C2F532C0097D0F4 /* Pods_DemoValidator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 453C54B23E8AFF49BF97845E /* Pods_DemoValidator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F8ADF5062C2F474F0097D0F4 /* Flutter.xcframework in Embed Frameworks */,
+				F8ADF5442C2F532C0097D0F4 /* Pods_DemoValidator.framework in Embed Frameworks */,
 				F8ADF5042C2F474D0097D0F4 /* App.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -52,8 +54,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8ADF5052C2F474F0097D0F4 /* Flutter.xcframework in Frameworks */,
+				F8ADF5432C2F532C0097D0F4 /* Pods_DemoValidator.framework in Frameworks */,
 				F8ADF5032C2F474D0097D0F4 /* App.xcframework in Frameworks */,
-				F60174D07FE34382BFDBCBEF /* Pods_DemoValidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +68,6 @@
 				A5ED7849E90A92B1A080D534 /* Pods-DemoValidator.debug.xcconfig */,
 				0F49176C458695100B660106 /* Pods-DemoValidator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -338,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -371,6 +372,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,11 +384,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.app.DemoValidator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -411,6 +417,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,10 +429,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.app.DemoValidator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -2,15 +2,15 @@ PODS:
   - Flutter (3.19.5)
 
 DEPENDENCIES:
-  - Flutter (from `/Users/yudhapratamaputra/Downloads/Development/FrameworkBuild/Release/Flutter.podspec`)
+  - Flutter (from `FrameworkBuild/Release/Flutter.podspec`)
 
 EXTERNAL SOURCES:
   Flutter:
-    :podspec: "/Users/yudhapratamaputra/Downloads/Development/FrameworkBuild/Release/Flutter.podspec"
+    :podspec: FrameworkBuild/Release/Flutter.podspec
 
 SPEC CHECKSUMS:
   Flutter: 70594bdf124ab555f850d5cd1ee6bbf1c3c98a00
 
-PODFILE CHECKSUM: 19bde56eb907117e8d4a0fb5787857581b0e972f
+PODFILE CHECKSUM: 58cb42f7cdee3a0ec3f1c185e88b43e66883e2bf
 
 COCOAPODS: 1.15.2
